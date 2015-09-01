@@ -24,7 +24,7 @@ script:
 
   # Test for python version
   - >
-      python -v | grep 2.7
+      python -V 2>&1 | grep "^Python 2.7."
       || (echo 'python verison incorrect!' > /dev/stderr && exit 1)
 
   # Test for virtualenv
