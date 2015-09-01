@@ -1,0 +1,4 @@
+---
+python_2_install_dev: true
+python_2_install_virtualenv: true
+python_2_install_pip: true

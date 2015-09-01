@@ -1,0 +1,24 @@
+---
+- name: ensure python is installed
+  become: true
+  become_method: sudo
+  apt: name=python state=present
+
+- name: ensure pip is installed
+  become: true
+  become_method: sudo
+  apt: name=python-pip state=present
+  when: python_2_install_pip
+
+- name: ensure python development package is installed
+  become: true
+  become_method: sudo
+  apt: name=python-dev state=present
+  when: python_2_install_dev
+
+- name: ensure virtualenv is installed
+  become: true
+  become_method: sudo
+  apt: name=python-virtualenv state=present
+  when: python_2_install_virtualenv
+

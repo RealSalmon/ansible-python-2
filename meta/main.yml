@@ -1,0 +1,13 @@
+---
+galaxy_info:
+  author: Ben Jones
+  description: Install Python 2.7, pip, virtualenv, and the python-dev package
+  company: FogButter
+  license: BSD
+  min_ansible_version: 1.9
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+  categories:
+    - development
